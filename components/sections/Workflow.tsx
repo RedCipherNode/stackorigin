@@ -10,6 +10,7 @@ export default function Workflow() {
         <Section id="workflow">
             <Container>
                 <Heading
+                    as="h2"
                     title="Workflow"
                     description="A simple deployment flow from local project to production."
                     align="center"

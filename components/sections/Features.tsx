@@ -10,6 +10,7 @@ export default function Features() {
         <Section id="features">
             <Container>
                 <Heading
+                    as="h2"
                     title="Features"
                     description="Everything you need to deploy modern web applications without unnecessary complexity."
                     align="center"

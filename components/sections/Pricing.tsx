@@ -12,6 +12,7 @@ export default function Pricing() {
         <Section id="pricing">
             <Container>
                 <Heading
+                    as="h2"
                     title="Pricing"
                     description="Simple, transparent, and intentionally minimal."
                     align="center"

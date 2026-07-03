@@ -17,6 +17,7 @@ export default function Hero() {
                     </Badge>
 
                     <Heading
+                        as="h1"
                         title={hero.title}
                         description={hero.description}
                         align="center"
