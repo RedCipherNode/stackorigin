@@ -1,3 +1,5 @@
+import { hero } from "@/constants/hero";
+
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
@@ -11,50 +13,48 @@ export default function Hero() {
             <Container>
                 <div className="mx-auto max-w-3xl text-center">
                     <Badge>
-                        Early Access
+                        {hero.badge}
                     </Badge>
 
                     <Heading
-                        title="Build. Deploy. Iterate."
-                        description="Deploy static sites and modern web applications with a clean workflow and straightforward tools."
+                        title={hero.title}
+                        description={hero.description}
                         align="center"
                         className="mt-8"
                     />
 
                     <div className="mt-10 flex justify-center gap-4">
                         <Button>
-                            Get Started
+                            {hero.actions.primary}
                         </Button>
 
                         <Button variant="secondary">
-                            View on GitHub
+                            {hero.actions.secondary}
                         </Button>
                     </div>
                 </div>
 
                 <Card className="mx-auto mt-20 max-w-4xl">
                     <div className="space-y-3 font-mono text-sm">
-                        <p className="text-zinc-500">
-                            $ stackorigin deploy
-                        </p>
+                        {hero.terminal.map((line, index) => {
+                            const isCommand = index === 0;
+                            const isUrl = index === hero.terminal.length - 1;
 
-                        <p className="text-emerald-400">
-                            ✓ Building project...
-                        </p>
-
-                        <p className="text-emerald-400">
-                            ✓ Running tests...
-                        </p>
-
-                        <p className="text-emerald-400">
-                            ✓ Deployment successful
-                        </p>
-
-                        <div className="border-t border-zinc-800 pt-4">
-                            <p className="text-zinc-300">
-                                https://app.stackorigin.dev
-                            </p>
-                        </div>
+                            return (
+                                <p
+                                    key={line}
+                                    className={
+                                        isCommand
+                                            ? "text-zinc-500"
+                                            : isUrl
+                                              ? "border-t border-zinc-800 pt-4 text-zinc-300"
+                                              : "text-emerald-400"
+                                    }
+                                >
+                                    {line}
+                                </p>
+                            );
+                        })}
                     </div>
                 </Card>
             </Container>

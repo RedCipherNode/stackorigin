@@ -21,7 +21,7 @@ export default function HomePage() {
 });
     return (
         <>
-            {/* <Navbar /> */}
+            <Navbar />
 
             <main>
                 <Hero />
@@ -29,10 +29,10 @@ export default function HomePage() {
                 <Features />
                 <Pricing />
                 <Faq />
-                {/* <Cta /> */}
+                <Cta />
             </main>
 
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 }
