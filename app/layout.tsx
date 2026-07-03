@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
+import type { ReactNode } from "react";
+
+import { metadata } from "@/config/metadata";
+
 import "./globals.css";
 
-export const metadata: Metadata = {
-    title: "StackOrigin",
-    description: "Deployment platform.",
-};
-
 interface RootLayoutProps {
-    children: React.ReactNode;
+    children: ReactNode;
 }
+
+export { metadata };
 
 export default function RootLayout({
     children,
