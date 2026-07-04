@@ -1,10 +1,8 @@
 # StackOrigin
 
-A fictional deployment platform built as a frontend portfolio project.
+StackOrigin is a fictional deployment platform built to explore modern web application architecture, reusable UI systems, and scalable frontend engineering.
 
-StackOrigin is designed to demonstrate clean frontend architecture, reusable UI components, modern React development, and maintainable project organization using Next.js, TypeScript, and Tailwind CSS.
-
-> This project is not intended to become a commercial product. Its primary goal is to showcase engineering practices, UI implementation, and project structure.
+The project focuses on building a clean, maintainable codebase using modern technologies and development practices while simulating a real-world SaaS product.
 
 ---
 
@@ -20,13 +18,14 @@ Coming soon.
 - React
 - TypeScript
 - Tailwind CSS
+- ESLint
 - Prettier
 
 ---
 
 ## Project Structure
 
-```
+```text
 app/
 components/
 config/
@@ -44,17 +43,17 @@ utils/
 
 ## Architecture
 
-The project follows a simple separation of responsibilities.
-
 | Directory | Responsibility |
 | ---------- | -------------- |
-| app | Application entry and routing |
-| components | UI components and page sections |
+| app | Application routing and layouts |
+| components | Reusable UI components and page sections |
 | config | Application configuration |
-| constants | Static content and data |
-| hooks | Reusable React hooks |
-| lib | Shared libraries and integrations |
-| styles | Styling resources |
+| constants | Static application content |
+| docs | Project documentation |
+| hooks | Custom React hooks |
+| lib | Shared libraries |
+| public | Static assets |
+| styles | Global styling resources |
 | types | Shared TypeScript types |
 | utils | Utility functions |
 
@@ -62,21 +61,20 @@ The project follows a simple separation of responsibilities.
 
 ## Design Principles
 
-- Simple architecture
-- Reusable components
-- Consistent naming conventions
+- Simple and predictable architecture
+- Reusable UI components
 - Separation of content and presentation
-- Minimal abstraction
-- Maintainable codebase
+- Consistent naming conventions
 - Composition over duplication
+- Maintainable project structure
 
 ---
 
 ## Features
 
 - Responsive landing page
+- Component-based architecture
 - Reusable UI primitives
-- Clean component architecture
 - Static content management
 - Semantic HTML
 - TypeScript-first development
@@ -91,19 +89,19 @@ Install dependencies
 npm install
 ```
 
-Run the development server
+Start the development server
 
 ```bash
 npm run dev
 ```
 
-Build for production
+Create a production build
 
 ```bash
 npm run build
 ```
 
-Lint
+Run ESLint
 
 ```bash
 npm run lint
@@ -113,7 +111,7 @@ npm run lint
 
 ## Documentation
 
-Additional documentation can be found inside the `docs` directory.
+Additional documentation is available in the `docs` directory.
 
 - Architecture
 - Naming Convention
@@ -124,10 +122,12 @@ Additional documentation can be found inside the `docs` directory.
 
 ## Project Status
 
-Currently under active development.
+🚧 Active development
+
+StackOrigin is currently in active development and will continue to evolve with additional pages, application workflows, authentication, dashboard interfaces, and reusable frontend systems.
 
 ---
 
 ## License
 
-This project is available for learning, inspiration, and portfolio purposes.
+See the LICENSE file for details.

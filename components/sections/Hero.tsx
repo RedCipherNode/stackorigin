@@ -10,6 +10,7 @@ import Section from "@/components/ui/Section";
 export default function Hero() {
     return (
         <Section>
+            
             <Container>
                 <div className="mx-auto max-w-3xl text-center">
                     <Badge>

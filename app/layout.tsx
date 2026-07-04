@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { metadata } from "@/config/metadata";
 
 import "./globals.css";
+import "./styles/background.css";
 
 interface RootLayoutProps {
     children: ReactNode;
@@ -15,7 +16,11 @@ export default function RootLayout({
 }: Readonly<RootLayoutProps>) {
     return (
         <html lang="en">
-            <body>{children}</body>
+            <body>
+    <div className="background-canvas" />
+
+        {children}
+    </body>
         </html>
     );
 }

@@ -4,7 +4,7 @@ export const hero = {
     title: "Build. Deploy. Iterate.",
 
     description:
-        "Deploy static sites and modern web applications with a clean workflow and straightforward tools.",
+        "Deploy applications with a clean, predictable workflow from development to production.",
 
     actions: {
         primary: "Get Started",

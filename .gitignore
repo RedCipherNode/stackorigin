@@ -16,6 +16,11 @@ test-results/
 !.env.example
 
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
 *.tsbuildinfo
 
 .vscode/*
@@ -31,6 +36,7 @@ Thumbs.db
 Desktop.ini
 
 .cache/
+.parcel-cache/
 temp/
 tmp/
 
@@ -39,3 +45,7 @@ release/
 *.zip
 *.7z
 *.rar
+*.tar
+*.gz
+
+eslintcache

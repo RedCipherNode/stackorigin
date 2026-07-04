@@ -1,19 +1,38 @@
 import Link from "next/link";
-
 import { navigation } from "@/config/navigation";
-
 import Container from "@/components/ui/Container";
-
+import Image from "next/image";
 export default function Navbar() {
     return (
-        <header className="border-b border-zinc-900">
+        <header
+            className="
+                sticky
+                top-0
+                z-50
+                border-b
+                border-white/5
+                bg-zinc-950/70
+                backdrop-blur-xl
+            "
+        >
             <Container>
-                <nav className="flex h-16 items-center justify-between">
+                <nav className="flex h-18 items-center justify-between">
+
                     <Link
                         href="/"
-                        className="text-lg font-semibold tracking-tight"
+                        className="flex items-center gap-2"
                     >
-                        StackOrigin
+                        <Image
+                            src="/logos/stackorigin-symbol.svg"
+                            alt="StackOrigin"
+                            width={32}
+                            height={32}
+                            priority
+                        />
+
+                        <span className="text-lg font-semibold tracking-tight">
+                            StackOrigin
+                        </span>
                     </Link>
 
                     <ul className="flex items-center gap-8">
@@ -21,7 +40,13 @@ export default function Navbar() {
                             <li key={item.href}>
                                 <Link
                                     href={item.href}
-                                    className="text-sm text-zinc-400 transition-colors hover:text-white"
+                                    className="
+                                        text-sm
+                                        text-zinc-400
+                                        transition-all
+                                        duration-200
+                                        hover:text-white
+                                    "
                                 >
                                     {item.label}
                                 </Link>

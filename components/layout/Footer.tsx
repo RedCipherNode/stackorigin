@@ -1,20 +1,29 @@
 import Link from "next/link";
-
 import { navigation } from "@/config/navigation";
 import { footer } from "@/constants/footer";
-
 import Container from "@/components/ui/Container";
+import Image from "next/image";
 
 export default function Footer() {
     return (
         <footer className="border-t border-zinc-800">
             <Container>
                 <div className="flex flex-col items-center gap-8 py-12">
+
                     <Link
                         href="/"
-                        className="text-lg font-semibold tracking-tight"
+                        className="flex items-center gap-3"
                     >
-                        StackOrigin
+                        <Image
+                            src="/logos/stackorigin-symbol.svg"
+                            alt="StackOrigin"
+                            width={28}
+                            height={28}
+                        />
+
+                        <span className="text-lg font-semibold tracking-tight">
+                            StackOrigin
+                        </span>
                     </Link>
 
                     <nav>

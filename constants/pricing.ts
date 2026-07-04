@@ -2,7 +2,7 @@ export const pricing = {
     name: "Community",
     price: "Free",
     description:
-        "A fictional plan created for this portfolio project.",
+        "Everything you need to launch your next project with no unnecessary complexity.",
     features: [
         "Unlimited projects",
         "Git repository integration",

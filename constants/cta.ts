@@ -1,8 +1,12 @@
 export const cta = {
-    title: "Interested in the implementation?",
+    badge: "Open Source",
+
+    title: "Build Without the Complexity",
 
     description:
-        "Explore the source code and see how StackOrigin is structured.",
+        "Experience a streamlined deployment workflow designed for modern applications.",
 
-    action: "View Source",
+    primaryAction: "View Source",
+
+    secondaryAction: "Documentation",
 } as const;

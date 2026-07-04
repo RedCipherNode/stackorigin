@@ -2,7 +2,7 @@ export const faq = [
     {
         question: "Is StackOrigin a real product?",
         answer:
-            "No. StackOrigin is a fictional platform created as a frontend portfolio project.",
+            "StackOrigin is currently presented as a concept platform to demonstrate a modern deployment experience and product workflow.",
     },
 
     {
